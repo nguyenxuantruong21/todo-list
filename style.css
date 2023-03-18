@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, rgb(196, 158, 158),rgb(201, 204, 172));
+    height: 100vh;
+}
+
+.container{
+    width: 500px;
+    height: 600px;
+    background-color: rgb(241, 239, 236);
+    margin: 100px auto;
+    border-radius: 20px;
+    border: 1px solid rgb(185, 135, 135);
+    overflow: hidden;
+}
+
+.form{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #aaa;
+    height: 60px;
+}
+
+.form input{
+    outline: none;
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    color: #444;
+    padding: 0 24px;
+    background-color: rgb(241, 239, 236);
+}
+
+.form button{
+    width: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+
+.todos ul li{
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+
+
+.todos ul li.completed{
+    color: #beb0b0;
+    cursor: pointer;
+    text-decoration: line-through;
+    background-color: rgb(30, 83, 83);
+}
+
+.todos ul li .check{
+    display: none;
+}
+
+.todos ul li.completed .check{
+    display: inline-block;
+}
+
+.todos ul li p{
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
